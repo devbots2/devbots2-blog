@@ -7,6 +7,7 @@ const posts = defineCollection({
     title: z.string(),
     pubDate: z.string(),
     author: z.string(),
+    category: z.enum(['Networking', 'AI', 'Robotics']),
   }),
 });
 
