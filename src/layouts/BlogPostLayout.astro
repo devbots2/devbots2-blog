@@ -1,0 +1,76 @@
+---
+// src/layouts/BlogPostLayout.astro
+interface Props {
+  frontmatter?: {
+    title?: string;
+    pubDate?: string;
+    author?: string;
+  };
+}
+
+const { frontmatter = {} } = Astro.props;
+---
+
+<html lang="si">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{frontmatter?.title ?? "Tech Blog"}</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/" class="back-link">← ආපසු මුල් පිටුවට (Go Back)</a>
+    </nav>
+
+    <article>
+      <h1>{frontmatter?.title ?? "Untitled Post"}</h1>
+
+      {frontmatter?.pubDate && <p class="meta-info">Published on: {frontmatter.pubDate}</p>}
+      {frontmatter?.author && <p class="meta-info">Author: {frontmatter.author}</p>}
+
+      <hr />
+
+      <div class="content">
+        <slot />
+      </div>
+    </article>
+  </body>
+</html>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 20px;
+    line-height: 1.8;
+  }
+  .back-link {
+    color: #0076ff;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  h1 {
+    color: #0f172a;
+    font-size: 2.2rem;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .meta-info {
+    color: #64748b;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+  }
+  hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 15px 0 30px;
+  }
+  .content {
+    font-size: 1.1rem;
+  }
+</style>

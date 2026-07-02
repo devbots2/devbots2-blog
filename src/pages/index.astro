@@ -1,0 +1,40 @@
+---
+// Import your layout component
+import BaseLayout from '../layouts/BlogPostLayout.astro';
+import { getCollection } from 'astro:content';
+
+// Fetch your blog posts
+const allPosts = await getCollection('posts');
+const pageTitle = "Tech Insights | සිංහල & English";
+---
+
+<BaseLayout frontmatter={{ title: pageTitle }}>
+  <section class="hero">
+    <h1>Welcome to My Tech Blog</h1>
+    <p>Exploring networking, data, and software engineering in both English and Sinhala.</p>
+  </section>
+
+  <section class="posts">
+    <h2>Recent Posts</h2>
+    <ul>
+      {allPosts.map((post) => (
+        <li>
+          <a href={`/posts/${post.id}/`}>{post.data.title}</a>
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    padding: 2rem 0;
+    text-align: center;
+  }
+  .posts {
+    margin-top: 2rem;
+  }
+  h1 { font-size: 2.5rem; }
+  ul { list-style: none; padding: 0; }
+  li { margin-bottom: 1rem; }
+</style>
