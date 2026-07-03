@@ -26,21 +26,21 @@ const category = frontmatter?.category;
   <body>
     <header class="navbar-header">
       <div class="navbar-container">
-        <a href="/" class="logo-link">
+        <a href={import.meta.env.BASE_URL} class="logo-link">
           <span class="logo-icon">🤖</span> DevBots<span class="logo-accent">2</span>
         </a>
         <nav class="nav-links">
-          <a href="/">Home</a>
-          <a href="/categories/Networking">Networking</a>
-          <a href="/categories/AI">AI</a>
-          <a href="/categories/Robotics">Robotics</a>
+          <a href={import.meta.env.BASE_URL}>Home</a>
+          <a href={`${import.meta.env.BASE_URL}categories/Networking`}>Networking</a>
+          <a href={`${import.meta.env.BASE_URL}categories/AI`}>AI</a>
+          <a href={`${import.meta.env.BASE_URL}categories/Robotics`}>Robotics</a>
         </nav>
       </div>
     </header>
 
     <main class="main-content">
       <nav class="back-nav">
-        <a href="/" class="back-link">← ආපසු මුල් පිටුවට (Go Back)</a>
+        <a href={import.meta.env.BASE_URL} class="back-link">← ආපසු මුල් පිටුවට (Go Back)</a>
       </nav>
 
       <article class={`blog-article ${category ? `category-${category.toLowerCase()}` : ''}`}>

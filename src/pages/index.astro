@@ -24,7 +24,7 @@ const categories = ['Networking', 'AI', 'Robotics'] as const;
       {categories.map((cat) => {
         const count = sortedPosts.filter(p => p.data.category === cat).length;
         return (
-          <a href={`/categories/${cat}`} class={`quick-link-btn btn-${cat.toLowerCase()}`}>
+          <a href={`${import.meta.env.BASE_URL}categories/${cat}`} class={`quick-link-btn btn-${cat.toLowerCase()}`}>
             <span class="btn-dot"></span>
             <span class="btn-name">{cat}</span>
             <span class="btn-count">{count}</span>
@@ -45,7 +45,7 @@ const categories = ['Networking', 'AI', 'Robotics'] as const;
               <span class="title-accent"></span>
               {category} Related Posts
             </h2>
-            <a href={`/categories/${category}`} class="view-all-link">
+            <a href={`${import.meta.env.BASE_URL}categories/${category}`} class="view-all-link">
               View All {category} →
             </a>
           </div>
@@ -54,7 +54,7 @@ const categories = ['Networking', 'AI', 'Robotics'] as const;
             <div class="posts-grid">
               {postsInCategory.map((post) => (
                 <article class="post-card">
-                  <a href={`/posts/${post.id}/`} class="card-inner-link">
+                  <a href={`${import.meta.env.BASE_URL}posts/${post.id}/`} class="card-inner-link">
                     <div class="card-header">
                       <span class={`card-badge badge-${category.toLowerCase()}`}>{category}</span>
                       <span class="card-date">{post.data.pubDate}</span>

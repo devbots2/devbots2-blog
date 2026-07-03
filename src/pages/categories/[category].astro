@@ -28,7 +28,7 @@ const sortedPosts = posts.sort((a, b) => new Date(b.data.pubDate).getTime() - ne
   <div class={`category-page category-${category.toLowerCase()}`}>
     <div class="category-header">
       <span class="back-link-wrapper">
-        <a href="/" class="back-to-home">← Back to Homepage</a>
+        <a href={import.meta.env.BASE_URL} class="back-to-home">← Back to Homepage</a>
       </span>
       <h1 class="category-title">
         <span class="title-accent"></span>
@@ -42,7 +42,7 @@ const sortedPosts = posts.sort((a, b) => new Date(b.data.pubDate).getTime() - ne
     <div class="posts-grid">
       {sortedPosts.map((post) => (
         <article class="post-card">
-          <a href={`/posts/${post.id}/`} class="card-inner-link">
+          <a href={`${import.meta.env.BASE_URL}posts/${post.id}/`} class="card-inner-link">
             <div class="card-header">
               <span class={`card-badge badge-${category.toLowerCase()}`}>{category}</span>
               <span class="card-date">{post.data.pubDate}</span>
