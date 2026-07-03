@@ -1,20 +1,20 @@
 ---
-title: "රොබෝ තාක්ෂණයේ මූලික සංකල්ප (Fundamental Concepts of Robotics)"
+title: "Fundamental Concepts of Robotics"
 pubDate: "2026-07-02"
 author: "DevBots 2"
 category: Robotics
 ---
 
-රොබෝ තාක්ෂණය (Robotics) යනු පරිගණක විද්‍යාව, යාන්ත්‍රික ඉංජිනේරු විද්‍යාව (Mechanical Engineering) සහ විද්‍යුත් ඉංජිනේරු විද්‍යාව (Electrical Engineering) වැනි ක්ෂේත්‍ර කිහිපයක එකතුවෙන් බිහිවූ සුවිශේෂී ක්ෂේත්‍රයකි.
+Robotics is a unique field born from the combination of several disciplines, including Computer Science, Mechanical Engineering, and Electrical Engineering.
 
-## රොබෝවරයෙකු යනු කවුද?
+## What is a Robot?
 
-රොබෝවරයෙකු යනු මිනිස් මැදිහත්වීමකින් තොරව ස්වයංක්‍රීයව හෝ අර්ධ-ස්වයංක්‍රීයව වැඩ කිරීමට සැලසුම් කර ඇති පරිගණකමය වශයෙන් පාලනය වන යන්ත්‍රයකි.
+A robot is a computer-controlled machine designed to perform tasks automatically or semi-automatically without direct human intervention.
 
-### රොබෝවරයෙකුගේ ප්‍රධාන කොටස්:
+### Key Components of a Robot:
 
-- **සෙන්සර් (Sensors):** බාහිර පරිසරය හඳුනා ගැනීමට (උදාහරණ: කැමරා, අතිධ්වනික සෙන්සර්).
-- **පාලකය (Controller / Processor):** රොබෝගේ මොළය ලෙස ක්‍රියා කරන පරිගණක චිපය (උදාහරණ: Arduino, Raspberry Pi, Microcontrollers).
-- **ක්‍රියාකරවනයන් (Actuators / Motors):** චලනය වීමට සහ විවිධ ක්‍රියා සිදු කිරීමට උදව් වන මෝටර්.
+- **Sensors:** Used to perceive the external environment (e.g., cameras, ultrasonic sensors).
+- **Controller / Processor:** The computer chip that acts as the robot's brain (e.g., Arduino, Raspberry Pi, Microcontrollers).
+- **Actuators / Motors:** Devices that enable movement and allow the robot to perform actions.
 
-මීළඟ පාඩම්වලදී අපි රොබෝ කෙනෙක් හදන හැටි පියවරෙන් පියවර සාකච්ඡා කරමු!
+In the upcoming lessons, we will discuss how to build a robot step by step!

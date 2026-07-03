@@ -1,19 +1,19 @@
 ---
-title: "පරිගණක ජාලකරණයේ මූලිකාංග (Introduction to Networking Basics)"
+title: "Introduction to Networking Basics"
 pubDate: "2026-07-02"
 author: "DevBots 2"
 category: Networking
 ---
 
-පරිගණක ජාලකරණය (Computer Networking) කියන්නේ අද ලෝකයේ සියලුම ස්මාර්ට් සන්නිවේදන කටයුතුවලට පදනම සපයන තාක්ෂණයයි. අපේ දුරකථන, පරිගණක සහ සේවාදායක (servers) එකිනෙකා සමඟ සම්බන්ධ වන්නේ මේ හරහා ය.
+Computer Networking is the technology that provides the foundation for all smart communications in today's world. Our phones, computers, and servers connect and communicate with each other through it.
 
-## පරිගණක ජාලයක් යනු කුමක්ද?
+## What is a Computer Network?
 
-සරලවම කිවහොත්, උපාංග දෙකක් හෝ වැඩි ගණනක් දත්ත බෙදාගැනීම සඳහා එකිනෙකා සමඟ සම්බන්ධ කිරීම පරිගණක ජාලයක් ලෙස හැඳින්වේ. 
+Simply put, a computer network is a collection of two or more devices connected together for the purpose of sharing data and resources.
 
-### ප්‍රධාන ජාල වර්ග (Main Network Types):
+### Main Network Types:
 
-- **LAN (Local Area Network):** නිවසක හෝ කුඩා කාර්යාලයක ඇති උපාංග සම්බන්ධ කරන ජාලය.
-- **WAN (Wide Area Network):** ලෝකය පුරා පැතිරී ඇති විශාල ජාලයක් (උදාහරණයක් ලෙස අන්තර්ජාලය).
+- **LAN (Local Area Network):** A network that connects devices within a limited area such as a home or a small office.
+- **WAN (Wide Area Network):** A large network that extends over a large geographical area (for example, the Internet).
 
-පරිගණක ජාලකරණය හරහා අපට ලෝකයේ ඕනෑම තැනක සිටින අයෙකු සමඟ තත්පර කිහිපයකින් දත්ත හුවමාරු කර ගැනීමට හැකියාව ලැබී ඇත.
+Computer networking has enabled us to exchange data and communicate with anyone in the world within seconds.

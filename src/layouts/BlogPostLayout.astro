@@ -13,7 +13,7 @@ const { frontmatter = {} } = Astro.props;
 const category = frontmatter?.category;
 ---
 
-<html lang="si">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,7 +40,7 @@ const category = frontmatter?.category;
 
     <main class="main-content">
       <nav class="back-nav">
-        <a href={import.meta.env.BASE_URL} class="back-link">← ආපසු මුල් පිටුවට (Go Back)</a>
+        <a href={import.meta.env.BASE_URL} class="back-link">← Go Back to Homepage</a>
       </nav>
 
       <article class={`blog-article ${category ? `category-${category.toLowerCase()}` : ''}`}>
@@ -82,7 +82,7 @@ const category = frontmatter?.category;
     <footer class="blog-footer">
       <div class="footer-container">
         <p>&copy; {new Date().getFullYear()} DevBots2 Blog. All rights reserved.</p>
-        <p class="footer-subtext">Exploring AI, Robotics, and Networking in සිංහල & English</p>
+        <p class="footer-subtext">Exploring AI, Robotics, and Networking</p>
       </div>
     </footer>
   </body>

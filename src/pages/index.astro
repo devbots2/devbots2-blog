@@ -5,7 +5,7 @@ import { getCollection } from 'astro:content';
 
 // Fetch your blog posts
 const allPosts = await getCollection('posts');
-const pageTitle = "Tech Insights | සිංහල & English";
+const pageTitle = "Tech Insights | DevBots2 Blog";
 
 // Sort posts by date (latest first)
 const sortedPosts = allPosts.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
@@ -18,7 +18,7 @@ const categories = ['Networking', 'AI', 'Robotics'] as const;
   <section class="hero-section">
     <div class="hero-badge">Welcome to DevBots2 Blog</div>
     <h1 class="hero-title">Discover the Future of <br/><span class="gradient-text">Technology & Engineering</span></h1>
-    <p class="hero-subtitle">Exploring computer networking, artificial intelligence, and advanced robotics in Sinhala & English.</p>
+    <p class="hero-subtitle">Exploring computer networking, artificial intelligence, and advanced robotics.</p>
     
     <div class="category-quick-links">
       {categories.map((cat) => {

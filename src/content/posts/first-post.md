@@ -1,24 +1,24 @@
 ---
-title: "කෘත්‍රිම බුද්ධිය (AI) සහ රොබෝ තාක්ෂණයේ අනාගතය"
+title: "The Future of Artificial Intelligence (AI) and Robotics"
 pubDate: "2026-07-02"
 author: "DevBots 2"
 category: AI
 ---
 
-කෘත්‍රිම බුද්ධිය (Artificial Intelligence) සහ රොබෝ තාක්ෂණය (Robotics) කියන්නේ අනාගත ලෝකය සම්පූර්ණයෙන්ම වෙනස් කරන්න යන ප්‍රධානතම තාක්ෂණික ක්ෂේත්‍ර දෙකක්.
+Artificial Intelligence (AI) and Robotics are two of the most prominent technological fields that are going to completely transform the future of our world.
 
-මෙම බ්ලොග් අඩවිය හරහා අපි සරල සිංහලෙන් සහ ඉංග්‍රීසියෙන් මේ පිළිබඳව ගැඹුරින් සාකච්ඡා කිරීමට බලාපොරොත්තු වෙනවා.
+Through this blog, we aim to discuss these concepts in depth and in a simple, easy-to-understand manner.
 
-## ඇයි අපි මේ ක්ෂේත්‍රය ඉගෙන ගත යුත්තේ?
+## Why Should We Study This Field?
 
-වර්තමාන ලෝකයේ රැකියා වෙළඳපොළ වේගයෙන් සංකීර්ණ වෙමින් පවතිනවා. විශේෂයෙන්ම:
+The job market in the modern world is evolving rapidly. In particular:
 
-- **ස්වයංක්‍රීය පද්ධති (Automation):** කර්මාන්තශාලා සහ දෛනික වැඩකටයුතු ස්වයංක්‍රීය වෙමින් පවතී.
+- **Automation:** Factories and daily tasks are increasingly becoming automated.
 
-- **දත්ත විශ්ලේෂණය (Data Analysis):** AI මඟින් විශාල දත්ත ප්‍රමාණයක් තත්පර කිහිපයකින් විශ්ලේෂණය කළ හැකිය.
+- **Data Analysis:** AI enables the analysis of massive amounts of data in a matter of seconds.
 
-- **ස්මාර්ට් උපාංග (Smart Devices):** IoT සහ Networking හරහා මේ සියලු උපාංග එකිනෙක සම්බන්ධ වේ.
+- **Smart Devices:** IoT and Networking connect all these devices together.
 
-> "තාක්ෂණය ඉගෙන ගැනීමට භාෂාව බාධාවක් කර නොගෙන, අපි හැමෝම එකතු වී අලුත් දෙයක් නිර්මාණය කරමු!"
+> "Let's not let language be a barrier to learning technology. Let's collaborate and build something new together!"
 
-මීළඟ ලිපියෙන් අපි පරිගණක ජාලකරණය (Networking) ගැන මූලිකව සාකච්ඡා කරමු. ඔබට ගැටළු ඇත්නම් අපගේ ප්‍රජාව සමඟ සම්බන්ධ වන්න.
+In the next article, we will discuss the fundamentals of computer networking. If you have any questions, feel free to connect with our community.
