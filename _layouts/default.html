@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <!-- Modern Premium Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+  </head>
+  <body>
+    <header class="navbar-header">
+      <div class="navbar-container">
+        <a href="{{ '/' | relative_url }}" class="logo-link">
+          <span class="logo-icon">🤖</span> DevBots<span class="logo-accent">2</span>
+        </a>
+        <nav class="nav-links">
+          <a href="{{ '/' | relative_url }}">Home</a>
+          <a href="{{ '/categories/Networking/' | relative_url }}">Networking</a>
+          <a href="{{ '/categories/AI/' | relative_url }}">AI</a>
+          <a href="{{ '/categories/Robotics/' | relative_url }}">Robotics</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      {% if page.url != "/" and page.url != "/index.html" %}
+      <nav class="back-nav">
+        <a href="{{ '/' | relative_url }}" class="back-link">← Go Back to Homepage</a>
+      </nav>
+      {% endif %}
+
+      <article class="blog-article {% if page.category %}category-{{ page.category | downcase }}{% endif %}">
+        {% if page.layout == "post" %}
+          {% if page.category %}
+          <div class="category-badge-wrapper">
+            <span class="badge badge-{{ page.category | downcase }}">{{ page.category }}</span>
+          </div>
+          {% endif %}
+          
+          <h1 class="post-title">{{ page.title }}</h1>
+
+          <div class="meta-container">
+            {% if page.pubDate %}
+            <div class="meta-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+              </svg>
+              <span>{{ page.pubDate }}</span>
+            </div>
+            {% endif %}
+            {% if page.author %}
+            <div class="meta-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg>
+              <span>{{ page.author }}</span>
+            </div>
+            {% endif %}
+          </div>
+
+          <hr class="divider" />
+        {% elsif page.layout == "default" and page.title and page.url != "/" and page.url != "/index.html" %}
+          <h1 class="post-title">{{ page.title }}</h1>
+          <hr class="divider" />
+        {% endif %}
+
+        <div class="content-body">
+          {{ content }}
+        </div>
+      </article>
+    </main>
+
+    <footer class="blog-footer">
+      <div class="footer-container">
+        <p>&copy; {{ site.time | date: "%Y" }} DevBots2 Blog. All rights reserved.</p>
+        <p class="footer-subtext">Exploring AI, Robotics, and Networking</p>
+      </div>
+    </footer>
+  </body>
+</html>

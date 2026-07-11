@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Understanding DHCP & The DORA Process: A Simple Guide for Beginners"
 pubDate: "2026-07-02"
 author: "DevBots 2"
@@ -60,8 +61,7 @@ Let's break down each step with a friendly conversation analogy!
 
 * **The Analogy**: You walk into a crowded room and shout, *"Hey! Is there a front desk manager here? I need a room!"*
 * **What happens**: The client device boots up and has no IP address assigned (its source IP is `0.0.0.0`). It sends a **DHCP Discover** message as a **broadcast** (`255.255.255.255`) to destination MAC address `FF:FF:FF:FF:FF:FF`.
-* **Ports Used**: Source Port **UDP 68** $
-ightarrow$ Destination Port **UDP 67**.
+* **Ports Used**: Source Port **UDP 68** $\rightarrow$ Destination Port **UDP 67**.
 
 ---
 

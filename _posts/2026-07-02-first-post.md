@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "The Future of Artificial Intelligence (AI) and Robotics"
 pubDate: "2026-07-02"
 author: "DevBots 2"

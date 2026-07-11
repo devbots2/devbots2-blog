@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<div class="category-page category-{{ page.category | downcase }}">
+  <div class="category-header">
+    <h1 class="category-title">
+      <span class="title-accent"></span>
+      {{ page.category }} Related Articles
+    </h1>
+    <p class="category-desc">
+      All articles tagged under the <span class="tag-highlight">{{ page.category }}</span> category.
+    </p>
+  </div>
+
+  <div class="posts-grid">
+    {% assign posts_in_category = site.posts | where: "category", page.category %}
+    {% if posts_in_category.size > 0 %}
+      {% for post in posts_in_category %}
+        <article class="post-card">
+          <a href="{{ post.url | relative_url }}" class="card-inner-link">
+            <div class="card-header">
+              <span class="card-badge badge-{{ page.category | downcase }}">{{ page.category }}</span>
+              <span class="card-date">{{ post.pubDate }}</span>
+            </div>
+            <h3 class="card-title">{{ post.title }}</h3>
+            <div class="card-footer">
+              <span class="card-author">By {{ post.author }}</span>
+              <span class="read-more">Read Post →</span>
+            </div>
+          </a>
+        </article>
+      {% endfor %}
+    {% else %}
+      <div class="empty-state">
+        <p>No posts published in this category yet. Stay tuned!</p>
+      </div>
+    {% endif %}
+  </div>
+</div>

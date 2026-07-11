@@ -1,0 +1,63 @@
+---
+layout: default
+title: "Tech Insights | DevBots2 Blog"
+---
+{% assign category_list = "Networking,AI,Robotics" | split: "," %}
+
+<section class="hero-section">
+  <div class="hero-badge">Welcome to DevBots2 Blog</div>
+  <h1 class="hero-title">Discover the Future of <br/><span class="gradient-text">Technology & Engineering</span></h1>
+  <p class="hero-subtitle">Exploring computer networking, artificial intelligence, and advanced robotics.</p>
+  
+  <div class="category-quick-links">
+    {% for cat in category_list %}
+      {% assign cat_posts = site.posts | where: "category", cat %}
+      <a href="{{ '/categories/' | append: cat | append: '/' | relative_url }}" class="quick-link-btn btn-{{ cat | downcase }}">
+        <span class="btn-dot"></span>
+        <span class="btn-name">{{ cat }}</span>
+        <span class="btn-count">{{ cat_posts.size }}</span>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+<div class="sections-container">
+  {% for category in category_list %}
+    {% assign posts_in_category = site.posts | where: "category", category %}
+    <section class="category-section section-{{ category | downcase }}">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="title-accent"></span>
+          {{ category }} Related Posts
+        </h2>
+        <a href="{{ '/categories/' | append: category | append: '/' | relative_url }}" class="view-all-link">
+          View All {{ category }} →
+        </a>
+      </div>
+
+      {% if posts_in_category.size > 0 %}
+        <div class="posts-grid">
+          {% for post in posts_in_category %}
+            <article class="post-card">
+              <a href="{{ post.url | relative_url }}" class="card-inner-link">
+                <div class="card-header">
+                  <span class="card-badge badge-{{ category | downcase }}">{{ category }}</span>
+                  <span class="card-date">{{ post.pubDate }}</span>
+                </div>
+                <h3 class="card-title">{{ post.title }}</h3>
+                <div class="card-footer">
+                  <span class="card-author">By {{ post.author }}</span>
+                  <span class="read-more">Read Post →</span>
+                </div>
+              </a>
+            </article>
+          {% endfor %}
+        </div>
+      {% else %}
+        <div class="empty-state">
+          <p>No posts published in this category yet. Stay tuned!</p>
+        </div>
+      {% endif %}
+    </section>
+  {% endfor %}
+</div>

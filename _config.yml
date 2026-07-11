@@ -1,0 +1,24 @@
+title: "Tech Insights | DevBots2 Blog"
+description: "Exploring computer networking, artificial intelligence, and advanced robotics."
+url: "https://devbots2.github.io"
+baseurl: "/devbots2-blog"
+permalink: /posts/:title/
+
+# Build settings
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .astro/
+  - package.json
+  - package-lock.json
+  - tsconfig.json
+  - astro.config.mjs
+  - src/
+  - public/
+  - dist/

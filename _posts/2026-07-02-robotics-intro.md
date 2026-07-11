@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Fundamental Concepts of Robotics"
 pubDate: "2026-07-02"
 author: "DevBots 2"
